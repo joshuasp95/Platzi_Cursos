@@ -1,0 +1,48 @@
+usuarios{
+
+id: integer(pk)
+login: varchar(30)
+.
+.
+.
+}
+
+posts{
+id: integer(pk)
+fecha_pub: TIMESTAMP
+estatus: char(8) check(in('activo','inactico')
+usuario_id:integer fk
+categorias_id: integer fk
+}
+
+comentarios{
+
+id: integer(pk)
+comentario: text
+usuarios_id: integer fk
+posts_id: integer fk
+}
+
+categorias{
+
+id: integer (pk)
+categoria: varchar(30)
+
+}
+
+
+eitquetas{
+id: integer (pk)
+nom_etiqueta: varchar(30)
+
+}
+
+nueva tabla N:M (etiqueta, posts)
+
+posts_etiquetas{
+
+post_id: integer (pk, fk)
+etiqueta_id: integer (pk, fk)
+
+}
+

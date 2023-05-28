@@ -1,0 +1,56 @@
+El árbol representa todas las llamadas a la función mochila() y las diferentes combinaciones de objetos que se pueden incluir 
+o no incluir en la mochila. Las llamadas a la función se dividen en dos ramas, 
+una que incluye el objeto actual y otra que no lo incluye
+
+mochila(50, [10, 20, 30], [60, 100, 120], 3)
+├── mochila(40, [10, 20, 30], [60, 100, 120], 2) (Incluir el objeto 2)
+│   ├── mochila(20, [10, 20, 30], [60, 100, 120], 1) (Incluir el objeto 1)
+│   │   ├── mochila(10, [10, 20, 30], [60, 100, 120], 0) (Incluir el objeto 0)
+│   │   └── mochila(20, [10, 20, 30], [60, 100, 120], 0) (No incluir el objeto 0)
+│   └── mochila(40, [10, 20, 30], [60, 100, 120], 1) (No incluir el objeto 1)
+│       ├── mochila(30, [10, 20, 30], [60, 100, 120], 0) (Incluir el objeto 0)
+│       └── mochila(40, [10, 20, 30], [60, 100, 120], 0) (No incluir el objeto 0)
+└── mochila(50, [10, 20, 30], [60, 100, 120], 2) (No incluir el objeto 2)
+    ├── mochila(30, [10, 20, 30], [60, 100, 120], 1) (Incluir el objeto 1)
+    │   ├── mochila(20, [10, 20, 30], [60, 100, 120], 0) (Incluir el objeto 0)
+    │   └── mochila(30, [10, 20, 30], [60, 100, 120], 0) (No incluir el objeto 0)
+    └── mochila(50, [10, 20, 30], [60, 100, 120], 1) (No incluir el objeto 1)
+        ├── mochila(40, [10, 20, 30], [60, 100, 120], 0) (Incluir el objeto 0)
+        └── mochila(50, [10, 20, 30], [60, 100, 120], 0) (No incluir el objeto 0)
+
+
+El resultado final es el valor máximo que se puede obtener de todas las combinaciones posibles de objetos.
+
+Siguiendo el árbol de llamadas recursivas y calculando los valores obtenidos en cada rama, obtenemos lo siguiente:
+
+    Incluir objeto 2, incluir objeto 1, incluir objeto 0: Valor = 60 + 100 + 120 = 280 (no es posible porque el peso total es 60, que es mayor que el peso máximo de la mochila)
+    Incluir objeto 2, incluir objeto 1, no incluir objeto 0: Valor = 100 + 120 = 220 (peso total: 50)
+    Incluir objeto 2, no incluir objeto 1, incluir objeto 0: Valor = 60 + 120 = 180 (peso total: 40)
+    Incluir objeto 2, no incluir objeto 1, no incluir objeto 0: Valor = 120 (peso total: 30)
+    No incluir objeto 2, incluir objeto 1, incluir objeto 0: Valor = 60 + 100 = 160 (peso total: 30)
+    No incluir objeto 2, incluir objeto 1, no incluir objeto 0: Valor = 100 (peso total: 20)
+    No incluir objeto 2, no incluir objeto 1, incluir objeto 0: Valor = 60 (peso total: 10)
+    No incluir objeto 2, no incluir objeto 1, no incluir objeto 0: Valor = 0 (peso total: 0)
+
+De todas las combinaciones posibles, la que tiene el mayor valor sin exceder el peso máximo de la mochila (50) es la segunda combinación (incluir objeto 2 e incluir objeto 1), 
+con un valor total de 220 y un peso total de 50. Por lo tanto, el resultado final es 220.
+
+En este árbol, cada nodo muestra si se incluye o no un objeto, el valor acumulado y el peso total de la mochila en ese punto. 
+Los nodos marcados con una "✔️" son combinaciones válidas, mientras que los nodos marcados con una "❌" representan combinaciones en las que el 
+peso total excede el límite de la mochila.
+
+mochila(50, [10, 20, 30], [60, 100, 120], 3) (Valor: 0, Peso: 0)
+├── Incluir objeto 2 (Valor: 120, Peso: 30)
+│   ├── Incluir objeto 1 (Valor: 220, Peso: 50)
+│   │   ├── Incluir objeto 0 (Valor: 280, Peso: 60) ❌ (Peso excede el límite)
+│   │   └── No incluir objeto 0 (Valor: 220, Peso: 50) ✔️
+│   └── No incluir objeto 1 (Valor: 120, Peso: 30)
+│       ├── Incluir objeto 0 (Valor: 180, Peso: 40) ✔️
+│       └── No incluir objeto 0 (Valor: 120, Peso: 30) ✔️
+└── No incluir objeto 2 (Valor: 0, Peso: 0)
+    ├── Incluir objeto 1 (Valor: 100, Peso: 20)
+    │   ├── Incluir objeto 0 (Valor: 160, Peso: 30) ✔️
+    │   └── No incluir objeto 0 (Valor: 100, Peso: 20) ✔️
+    └── No incluir objeto 1 (Valor: 0, Peso: 0)
+        ├── Incluir objeto 0 (Valor: 60, Peso: 10) ✔️
+        └── No incluir objeto 0 (Valor: 0, Peso: 0) ✔️
