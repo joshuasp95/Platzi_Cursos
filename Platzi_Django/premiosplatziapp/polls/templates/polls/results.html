@@ -1,10 +1,34 @@
-<h1>{{ question.question_txt }}</h1>
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'polls/style.css' %}" />
+    <title>Premios Platzi App</title>
+  </head>
+  <body>
+    <header>
+      <h1>Bienvenido a la Web Principal de Premios Platzi</h1>
+    </header>
+    <main>
+      <h2>{{ question.question_txt }}</h2>
 
-<ul>
-  {% for choice in question.choice_set.all %}
-  <li>
-    {{ choice.choice_txt }} -- {{ choice.votes }} voto{{choice.votes|pluralize}}
-  </li>
-  {% endfor %}
-</ul>
-<a href="{% url 'polls:detail' question.id %}">Quieres volver a votar?</a>
+      <ul>
+        {% for choice in question.choice_set.all %}
+        <li>
+          {{ choice.choice_txt }}: {{ choice.votes }}
+          voto{{choice.votes|pluralize}}
+        </li>
+        {% endfor %}
+      </ul>
+      <p>
+        <a href="{% url 'polls:detail' question.id %}"
+          >Quieres volver a votar?</a
+        >
+      </p>
+    </main>
+    <footer><a href="{% url 'polls:index' %}">Home</a></footer>
+  </body>
+</html>

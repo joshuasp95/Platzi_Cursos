@@ -1,0 +1,120 @@
+body {
+  background: #f9f9f9 url("images/giphy-django.gif");
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: xx-large;
+  background-color: gold;
+  text-align: center;
+  padding: 2em;
+  border-radius: 10px;
+}
+
+h2 {
+  background-color: #f1f1f1;
+  padding: 1em;
+  font-size: xx-large;
+  font-family: monospace;
+}
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  background-color: darkgoldenrod;
+  min-height: 20em;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  min-height: 10em;
+  border: 1px solid green;
+}
+li {
+  margin-bottom: 1em;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  text-align: center;
+  font-size: xx-large;
+}
+
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+p {
+  color: red;
+  font-weight: bold;
+}
+
+form {
+  background-color: azure;
+}
+input {
+  margin-top: 5em;
+}
+input[type="submit"] {
+  margin: 1em 1em;
+  padding: 1em;
+  font-size: xx-large;
+  background-color: lightcoral;
+  color: #555;
+  font-weight: bold;
+}
+
+input[type="submit"]:hover {
+  background-color: chocolate;
+  transform: scale(1.2);
+}
+label {
+  font-size: xx-large;
+  font-family: monospace;
+  background-color: #f1f1f1;
+}
+
+footer {
+  background-color: #f1f1f1;
+  width: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+main p{
+  display: flex;
+  justify-content: center;
+}
+main p a {
+  background-color: darkgoldenrod;
+  padding: .5em;
+  font-size: xx-large;
+  font-weight: bold;
+
+}
+main p a:hover{
+  background-color: orangered;
+  padding: .8em;
+}
+footer a {
+  margin: 1em;
+  font-size: xx-large;
+  background-color: whitesmoke;
+}
+
+footer a:hover {
+  box-sizing: border-box;
+  background-color: #949494;
+  padding: 0.2em;
+}

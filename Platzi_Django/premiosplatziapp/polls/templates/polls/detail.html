@@ -1,21 +1,39 @@
-<form action="{% url 'polls:vote' question.id %}" method="post">
-  {% comment %} Medida Seguridad -> Cross Sid e Reverse Forgery {% endcomment %}
-  {% csrf_token %}
-  <fieldset>
-    <legend><h1>{{question.question_txt}}</h1></legend>
-    {% if error_message %}
-    <p><strong>{{error_message}}</strong></p>
-    {% endif %} {% for choice in question.choice_set.all %}
-    <input
-      type="radio"
-      name="choice"
-      id="choice {{forloop.counter}}"
-      value="{{choice.id}}"
-    />
-    <label for="choice{{forloop.counter}}">{{choice.choice_txt}}</label>
-    <br />
-    {% endfor %}
-  </fieldset>
-  <input type="submit" value="Votar" />
-</form>
-
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'polls/style.css' %}" />
+    <title>Premios Platzi App</title>
+  </head>
+  <body>
+    <header>
+      <h1>Bienvenido a la Web Principal de Premios Platzi</h1>
+    </header>
+    <main>
+      <form action="{% url 'polls:vote' question.id %}" method="post">
+        {% comment %} Medida Seguridad -> Cross Sid e Reverse Forgery
+        {%endcomment %} {% csrf_token %}
+        <fieldset>
+          <legend><h2>{{question.question_txt}}</h2></legend>
+          {% if error_message %}
+          <p><strong>{{error_message}}</strong></p>
+          {% endif %} {% for choice in question.choice_set.all %}
+          <input
+            type="radio"
+            name="choice"
+            id="choice {{forloop.counter}}"
+            value="{{choice.id}}"
+          />
+          <label for="choice{{forloop.counter}}">{{choice.choice_txt}}</label>
+          <br />
+          {% endfor %}
+        </fieldset>
+        <input type="submit" value="Votar" />
+      </form>
+    </main>
+    <footer><a href="{% url 'polls:index' %}">Home</a></footer>
+  </body>
+</html>
