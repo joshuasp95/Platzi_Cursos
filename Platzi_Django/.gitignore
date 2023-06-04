@@ -2,6 +2,8 @@
 *.dia 
 # TXT
 *.txt 
+#Images
+images/
 
 # Created by https://www.toptal.com/developers/gitignore/api/django,venv,python
 # Edit at https://www.toptal.com/developers/gitignore?templates=django,venv,python

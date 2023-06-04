@@ -13,7 +13,8 @@ class Question(models.Model):
 
     def was_published_recently(self):
         # Booleano que comprueba si la fecha de publicacion es mayor o igual que (la fecha actual menos 1 dia)
-        return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
+        # y menor que la fecha actual
+        return timezone.now() >= self.pub_date >= timezone.now() - datetime.timedelta(days=1)
 
 
 class Choice(models.Model):
