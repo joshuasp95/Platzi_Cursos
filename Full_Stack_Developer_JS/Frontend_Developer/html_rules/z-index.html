@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z Index</title>
+    <style>
+        header {
+            background-color: lightblue;
+        }
+
+        nav {
+            display: inline-block;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            width: 100em;
+            justify-content: space-around;
+        }
+
+        main {
+            background-color: tan;
+            padding: 3em;
+            box-sizing: border-box;
+        }
+
+        h3 {
+            position: absolute;
+        }
+
+        .titulo1 {
+            z-index: 4;
+        }
+
+        .titulo2 {
+            z-index: 3;
+            color: red;
+        }
+
+        section {
+            margin-top: 3em;
+            margin-bottom: 1em;
+        }
+
+        .colors {
+            position: absolute;
+            margin: 0;
+        }
+
+        .red {
+            width: 5em;
+            height: 5em;
+            background: red;
+            z-index: 5;
+            position: absolute;
+            top: 4em;
+        }
+
+        .blue {
+            width: 5em;
+            height: 5em;
+            background: blue;
+            z-index: 4;
+            position: absolute;
+
+        }
+
+        .yellow {
+            width: 4em;
+            height: 4em;
+            background: yellow;
+            z-index: 6;
+            position: absolute;
+            
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Z index</h1>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Work</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h3 class="titulo1">
+            Inicio de la documentacion
+        </h3>
+        <h3 class="titulo2">------------------------------------------Z index </h3>
+        <section>
+            <article>
+                <h2>Titulo</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus ad tempore modi! Pariatur
+                    blanditiis,
+                    minima quas nemo quos odit minus, magni laborum rem maxime quis consectetur deleniti neque
+                    iusto
+                    suscipit.</p>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h2>Titulo</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus ad tempore modi! Pariatur
+                    blanditiis,
+                    minima quas nemo quos odit minus, magni laborum rem maxime quis consectetur deleniti neque
+                    iusto
+                    suscipit.</p>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h2>Titulo</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus ad tempore modi! Pariatur
+                    blanditiis,
+                    minima quas nemo quos odit minus, magni laborum rem maxime quis consectetur deleniti neque
+                    iusto
+                    suscipit.</p>
+            </article>
+        </section>
+        <section class="colors">
+            <div class="red">Red
+            </div>
+            <div class="blue">Blue
+                <div class="yellow">Yellow</div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+            background-color: lightcoral;
+        }
+
+        div {
+            margin: 2em;
+            padding: 1em;
+        }
+
+        #box1 {
+            background-color: aliceblue;
+        }
+
+        #box2 {
+            background-color: rgb(97, 156, 208);
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <div id="box1">CAJA PADRE</div>
+        <div id="box2">OTRA CAJA</div>
+    </section>
+</body>
+
+</html>
