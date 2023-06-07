@@ -13,56 +13,57 @@ Este repositorio contiene una colección de archivos y proyectos resultantes de 
 - [PremiosPlatziApp](#premiosplatziapp)
 - [Utils](#utils)
 
-### Comprehensions_Funciones_Errores
+# Proyecto de Cursos de Platzi
 
-En esta carpeta se encuentran distintos scripts en Python que demuestran el uso de varios conceptos de Python, como listas y diccionarios con comprensión, funciones de alto orden como `map` y `filter`, el manejo de errores y la interacción con archivos. También se incluye una aplicación sencilla que maneja archivos CSV.
+Este repositorio contiene una colección de archivos y proyectos resultantes de diferentes cursos realizados en Platzi. A continuación se muestra una descripción de cada carpeta y su contenido correspondiente.
 
-**Tecnologías utilizadas:** Python, CSV
+## Tabla de contenidos
 
-### Curso_Fundamentos_Python
+- [Backend_Python](#backend_python)
+- [BBDD](#bbdd)
+- [Data_Analyst](#data_analyst)
+- [Full_Stack_Developer_JS](#full_stack_developer_js)
+- [utils](#utils)
+- [Contribuciones](#contribuciones)
 
-Esta carpeta contiene scripts de Python que cubren los fundamentos de Python, incluyendo tipos de datos, operaciones aritméticas y de comparación, condicionales, listas, tuplas, diccionarios y bucles. Además, se incluyen varios ejercicios de aplicación, incluyendo una versión del juego "piedra, papel o tijera".
+## Backend_Python
 
-**Tecnologías utilizadas:** Python
+En esta carpeta se encuentran proyectos y ejercicios relacionados con el desarrollo backend en Python. contiene un proyecto completo que utiliza el framework FastAPI para la creación de una API REST. El proyecto incluye una base de datos SQLite, esquemas de validación, rutas de acceso a los datos y un sistema de autenticación basado en tokens JWT...
 
-### Curso_Introduccion_BBDD
-
-Aquí se encuentran varios archivos relacionados con el manejo de bases de datos, incluyendo un archivo SQL con consultas al blog de Platzi, un diagrama de base de datos y varios scripts de SQL para crear, modificar y eliminar tablas.
-
-**Tecnologías utilizadas:** SQL, MySQL Workbench
-
-### Curso_Python_PIP_y_Entornos_Virtuales
-
-Esta carpeta incluye algunos archivos relacionados con el manejo de entornos virtuales y el sistema de paquetes de Python (PIP). También se incluye un juego simple de Python.
-
-**Tecnologías utilizadas:** Python, PIP, Virtualenv
-
-### OOP_Python_y_Algoritmos
-
-En esta sección se encuentran archivos de Python que demuestran conceptos de Programación Orientada a Objetos (POO), como abstracción, descomposición, encapsulación, herencia y polimorfismo. También se incluyen varios algoritmos de ordenamiento y búsqueda, así como algunos problemas de complejidad algorítmica.
-
-**Tecnologías utilizadas:** Python, OOP, Big O Notation
-
-### Platzi_FastAPI
-
-Este directorio contiene un proyecto completo que utiliza el framework FastAPI para la creación de una API REST. El proyecto incluye una base de datos SQLite, esquemas de validación, rutas de acceso a los datos y un sistema de autenticación basado en tokens JWT.
-
-**Tecnologías utilizadas:** Python, FastAPI, SQLite, JWT
-
-### Platzi_Django
-
-En esta carpeta se encuentra el proyecto "PremiosPlatziApp", que es un sistema de votación de premios. Está desarrollado en Django y consta de modelos, vistas, URL, templates y archivos estáticos, siguiendo el modelo MTV (Model, Template, View). El proyecto incluye funcionalidades como crear preguntas con opciones de respuesta, votar por una opción y ver los resultados de las votaciones.
+Tambien se encuentra el proyecto "PremiosPlatziApp", que es un sistema de votación de premios. Está desarrollado en Django y consta de modelos, vistas, URL, templates y archivos estáticos, siguiendo el modelo MTV (Model, Template, View). El proyecto incluye funcionalidades como crear preguntas con opciones de respuesta, votar por una opción y ver los resultados de las votaciones.
 
 Se ha utilizado el modelo TDD (Test Driven Development) para crear los respectivos test.
 
-**Tecnologías utilizadas:** Python, Django
+**Tecnologías utilizadas:** Python, Django, SQAlchemy, FastAPI, SQLite, JWT, ORM
+
+## BBDD
+
+Esta carpeta contiene archivos y scripts relacionados con el manejo de bases de datos. Se incluyen consultas SQL, un diagrama de base de datos y ejemplos de creación, modificación y eliminación de tablas.
+
+**Tecnologías utilizadas:** SQL, MySQL
+
+## Data_Analyst
+
+Esta carpeta se dedica a la ruta de Data Analyst en Platzi, que ofrece un análisis de datos estructurados y enseña cómo identificar patrones y tendencias. Se incluyen ejercicios y proyectos que cubren la creación de informes y visualizaciones estratégicas.
+
+Cursos fundamentos de análisis de datos, bases de datos y programación básica, así como el uso de herramientas de visualización y métricas. Con Tableau, Power BI y Google Data Studio para la visualización de datos, y PostgreSQL y SQL para la gestión de bases de datos.
+
+Excel a nivel intermedio y avanzado que se centran en el análisis de datos y la creación de tableros y fórmulas.
+
+**Tecnologías utilizadas:** Excel, SQL, PostgreSQL, Tableau, Power BI, Google Data Studio.
+
+## Full_Stack_Developer_JS
+
+Esta carpeta incluye proyectos y ejercicios relacionados con el desarrollo full stack utilizando JavaScript. Se abordan temas como HTML, CSS, JavaScript, React, Node.js, Express.js y bases de datos relacionales.
+
+**Tecnologías utilizadas:** JavaScript, HTML, CSS, Node.js, Express.js, SQL, React, PostgreSQL
 
 ### Utils
 
-Esta carpeta contiene un script de Python para eliminar archivos con una determinada extensión.
+Esta carpeta contiene un scripts de Python para distintas utilidades.
 
 **Tecnologías utilizadas:** Python
 
 ## Contribuciones
 
-Este repositorio es de uso personal para guardar el progreso en los cursos de Platzi.
+Este repositorio es de uso personal para guardar el progreso en los cursos de Platzi. Actualmente no se aceptan contribuciones externas.
