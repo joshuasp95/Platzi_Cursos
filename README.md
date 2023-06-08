@@ -1,20 +1,5 @@
 # Proyecto de Cursos de Platzi
 
-Este repositorio contiene una colección de archivos y proyectos resultantes de diferentes cursos realizados en Platzi.
-
-## Tabla de contenidos
-
-- [Comprehensions_Funciones_Errores](#comprehensions_funciones_errores)
-- [Curso_Fundamentos_Python](#curso_fundamentos_python)
-- [Curso_Introduccion_BBDD](#curso_introduccion_bbdd)
-- [Curso_Python_PIP_y_Entornos_Virtuales](#curso_python_pip_y_entornos_virtuales)
-- [OOP_Python_y_Algoritmos](#oop_python_y_algoritmos)
-- [Platzi_FastAPI](#platzi_fastapi)
-- [PremiosPlatziApp](#premiosplatziapp)
-- [Utils](#utils)
-
-# Proyecto de Cursos de Platzi
-
 Este repositorio contiene una colección de archivos y proyectos resultantes de diferentes cursos realizados en Platzi. A continuación se muestra una descripción de cada carpeta y su contenido correspondiente.
 
 ## Tabla de contenidos
