@@ -21,8 +21,6 @@ console.log(validarString(array));
 switch (false) {
     case false:
         console.log("Soy false");
-
-
     case true:
         console.log("Soy true");
 }
