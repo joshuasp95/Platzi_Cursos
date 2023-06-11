@@ -1,0 +1,88 @@
+<!-- HTML Code -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos en JavaScript</title>
+    <link rel="stylesheet" href="2-Eventos.css">
+    <script src="2-Eventos.js" defer></script>
+</head>
+
+<body>
+    <!-- Título principal -->
+    <h1>Eventos en JavaScript</h1>
+
+    <!-- Botón que disparará un evento al hacer clic en él -->
+    <button id="clickButton">Haz clic en mí</button>
+
+    <!-- Campo de entrada de texto que disparará un evento al escribir en él -->
+    <input type="text" id="inputField" placeholder="Escribe algo...">
+
+    <!-- Área de texto que mostrará la información del evento -->
+    <div id="eventInfo"></div>
+    <main>
+        <div id="caja1">
+        </div>
+        <div id="caja2">
+        </div>
+        <div id="caja3">
+        </div>
+    </main>
+
+    <form id="myForm">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <input type="submit" value="Enviar">
+    </form>
+    <div id="myDiv">Pasa el mouse sobre mí</div>
+
+    <input type="text" id="newTask" placeholder="Nueva tarea...">
+    <button id="addTask">Agregar Tarea</button>
+    <div>
+        <label>Filtrar por:</label>
+        <select id="filterTasks">
+            <option value="all">Todas</option>
+            <option value="completed">Completadas</option>
+            <option value="pending">Pendientes</option>
+        </select>
+    </div>
+    <ul id="taskList"></ul>
+    <!-- Script de JavaScript que gestionará los eventos -->
+    <script>
+        // Seleccione el botón por su ID y guárdelo en la variable 'button'
+        const button = document.getElementById('clickButton');
+
+        // Seleccione el campo de entrada de texto por su ID y guárdelo en la variable 'inputField'
+        const inputField = document.getElementById('inputField');
+
+        // Seleccione el div que mostrará la información del evento y guárdelo en la variable 'eventInfo'
+        const eventInfo = document.getElementById('eventInfo');
+
+        // Añade un oyente de eventos al botón para el evento 'click'
+        button.addEventListener('click', () => {
+            // Cuando el botón se hace clic, actualice el contenido del div 'eventInfo'
+            eventInfo.innerHTML = '<p>¡Has hecho clic en el botón!</p>';
+        });
+
+        // Añade un oyente de eventos al campo de entrada para el evento 'input'
+        inputField.addEventListener('input', (event) => {
+            // Cuando se escribe en el campo de entrada, actualice el contenido del div 'eventInfo' con lo que se escribió
+            eventInfo.innerHTML = `<p>Has escrito: ${event.target.value}</p>`;
+        });
+
+        // Añade un oyente de eventos al documento para el evento 'keydown'
+        document.addEventListener('keydown', (event) => {
+            // Cuando se presiona una tecla, muestra qué tecla fue presionada en 'eventInfo'
+            eventInfo.innerHTML = `<p>Has presionado la tecla: ${event.key}</p>`;
+        });
+    </script>
+</body>
+
+</html>
