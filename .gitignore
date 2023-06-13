@@ -158,3 +158,29 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+
+#JAVA
+# Ignorar archivos de configuración de Eclipse
+.classpath
+.project
+.settings/
+
+# Ignorar directorio de compilación
+/target/
+/bin/
+
+# Ignorar archivos de logs y bases de datos
+*.log
+*.sql
+
+# Ignorar otros archivos temporales
+*.tmp
+*.bak
+*.swp
+*.save
+
+#Para API-KEYS
+
+config.properties
+Keys*
+
