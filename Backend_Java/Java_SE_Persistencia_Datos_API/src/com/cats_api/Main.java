@@ -10,7 +10,7 @@ public class Main {
 
 		int opcion = -1;
 
-		String[] botones = { "1- Ver los gatos", "2- Salir" };
+		String[] botones = { "1- Ver los gatos", "2- Ver favoritos ", "3- Salir" };
 
 		do {
 			// Menu principal
@@ -19,8 +19,12 @@ public class Main {
 
 			// Validar opcion seleccionada por User
 			for (int i = 0; i < botones.length; i++) {
-				if (opcionUser.equals(botones[i])) {
-					opcion = i;
+				try {
+					if (opcionUser.equals(botones[i])) {
+						opcion = i;
+					}
+				} catch (Exception e) {
+					System.out.println("Error: " + e);
 				}
 
 			}
@@ -36,6 +40,15 @@ public class Main {
 				break;
 
 			case 1:
+				try {
+					CatsService.showFavorites(Cats.I_API_KEY);
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+
+				break;
+			case 2:
 				System.out.println("HASTA LUEGO!!");
 				break;
 
@@ -44,7 +57,7 @@ public class Main {
 				break;
 			}
 
-		} while (opcion != 1);
+		} while (opcion != 2);
 
 	}
 
