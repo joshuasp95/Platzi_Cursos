@@ -184,3 +184,6 @@ cython_debug/
 config.properties
 Keys*
 
+# Carpetas de trabajo 
+Platzi_Django/
+Platzi_FastAPI/
