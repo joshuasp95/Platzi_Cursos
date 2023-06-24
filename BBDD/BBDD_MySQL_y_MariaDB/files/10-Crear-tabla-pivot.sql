@@ -1,0 +1,11 @@
+use metro_cdmx;
+-- Crear tabla relacion n:m
+CREATE TABLE lineas_estaciones (
+    id BIGINT(20) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    pivot_linea_id BIGINT(20) NOT NULL,
+    pivot_estacion_id BIGINT(20) UNSIGNED NOT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    CONSTRAINT fk_pivot_linea_id FOREIGN KEY (pivot_linea_id) REFERENCES lineas (id),
+    CONSTRAINT fk_pivot_estacion_id FOREIGN KEY (pivot_estacion_id) REFERENCES estaciones (id)
+) DEFAULT CHARSET = UTF8MB4 COLLATE = UTF8MB4_UNICODE_CI;
