@@ -14,7 +14,7 @@ public class PasswordUtilTest {
     }
     @Test
     public void weak_only_letters() {
-        assertEquals(SecurityLevel.WEAK, PasswordUtil.assessPassword("sololetrassssssssssssssss"));
+        assertEquals(SecurityLevel.WEAK, PasswordUtil.assessPassword("sololetrassssssssssssss"));
 
     }
 
