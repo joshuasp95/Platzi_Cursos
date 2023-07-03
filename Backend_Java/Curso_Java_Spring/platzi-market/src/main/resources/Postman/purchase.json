@@ -1,0 +1,140 @@
+{
+  "info": {
+    "_postman_id": "40c17c8d-0fca-4096-92a8-dad39f55bdb6",
+    "name": "platzi-market-purchases",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get all purchases",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8090/platzi-market/api/purchases/all",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8090",
+          "path": [
+            "platzi-market",
+            "api",
+            "purchases",
+            "all"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get purchases by client",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8090/platzi-market/api/purchases/client/4546221",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8090",
+          "path": [
+            "platzi-market",
+            "api",
+            "purchases",
+            "client",
+            "4546221"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get purchases by non-existent client",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8090/platzi-market/api/purchases/client/9999999",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8090",
+          "path": [
+            "platzi-market",
+            "api",
+            "purchases",
+            "client",
+            "9999999"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create purchase",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n        \"clientId\": \"983824\",\n        \"date\": \"1992-08-10T17:30:00\",\n        \"paymentMethod\": \"E\",\n        \"comment\": \"\",\n        \"status\": \"P\",\n        \"items\": [\n            {\n                \"productId\": 1,\n                \"quantity\": 50,\n                \"total\": 3020.0,\n                \"active\": true\n            },\n            {\n                \"productId\": 24,\n                \"quantity\": 1,\n                \"total\": 4000.0,\n                \"active\": true\n            },\n            {\n                \"productId\": 27,\n                \"quantity\": 1,\n                \"total\": 9000.0,\n                \"active\": true\n            },\n            {\n                \"productId\": 36,\n                \"quantity\": 1,\n                \"total\": 40000.0,\n                \"active\": true\n            },\n            {\n                \"productId\": 49,\n                \"quantity\": 2,\n                \"total\": 11400.0,\n                \"active\": true\n            }\n        ]\n    }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8090/platzi-market/api/purchases/save",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8090",
+          "path": [
+            "platzi-market",
+            "api",
+            "purchases",
+            "save"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Save purchase",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n        \"clientId\": \"4546221\",\n        \"date\": \"2000-12-31T13:40:00\",\n        \"paymentMethod\": \"E\",\n        \"comment\": \"\",\n        \"state\": \"P\",\n        \"items\": [\n            {\n                \"productId\": 1,\n                \"quantity\": 10,\n                \"total\": 3000.0,\n                \"active\": true\n            },\n            {\n                \"productId\": 3,\n                \"quantity\": 20,\n                \"total\": 14000.0,\n                \"active\": true\n            }\n        ]\n    }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8090/platzi-market/api/purchases/save",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8090",
+          "path": [
+            "platzi-market",
+            "api",
+            "purchases",
+            "save"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "protocolProfileBehavior": {}
+}
