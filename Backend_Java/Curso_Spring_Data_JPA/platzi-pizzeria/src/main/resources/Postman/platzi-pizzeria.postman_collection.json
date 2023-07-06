@@ -1,0 +1,289 @@
+{
+	"info": {
+		"_postman_id": "85b402c8-5205-4c18-84ea-b07648e45948",
+		"name": "platzi-pizzeria",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "25798027"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/pizzas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/pizzas"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/pizzas/12",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/pizzas/12"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/pizzas/save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"name\": \"Hawayana\",\n        \"description\": \"Pepperoni, Homemade Tomato Sauce, Pineapple & Mozzarella.\",\n        \"price\": 16.0,\n        \"vegetarian\": true,\n        \"vegan\": false,\n        \"available\": true\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/pizzas/save"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/pizzas/save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"idPizza\": 1,\n        \"name\": \"Pepperoni\",\n        \"description\": \"Pepperoni, Homemade Tomato Sauce & Mozzarella.\",\n        \"price\": 29.99,\n        \"vegetarian\": true,\n        \"vegan\": true,\n        \"available\": true\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/pizzas/save",
+				"description": "Automatic update with Hibernate check java console to see SQL statement"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/pizzas/save",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"idPizza\": 12,\n    \"name\": \"Spinach Artichoke\",\n    \"description\": \"Fresh Spinach, Marinated Artichoke Hearts, Garlic, Fior de Latte, Mozzarella & Parmesan.\",\n    \"price\": 2.88,\n    \"vegetarian\": true,\n    \"vegan\": false,\n    \"available\": true,\n    \"createdDate\": null,\n    \"modifiedDate\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/pizzas/save",
+				"description": "Updated post to use put instead of post"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/pizzas/13",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/api/pizzas/14"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/orders"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/pizzas/available",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/pizzas/available"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/pizzas/name/pepperoni",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/pizzas/name/pepperoni"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/pizzas/with/MOZZ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/pizzas/with/MOZZ"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/pizzas/without/MOZZ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/pizzas/without/MOZZ"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/orders/today",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/orders/today"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/orders/outside",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/orders/outside"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/pizzas/vegan",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/pizzas/vegan"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/pizzas/cheapest/19",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/pizzas/cheapest/19"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/pizzas/availablePage?sortBy=name&sortDirection=DESC",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/pizzas/availablePage?sortBy=name&sortDirection=DESC",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pizzas",
+						"availablePage"
+					],
+					"query": [
+						{
+							"key": "sortBy",
+							"value": "name"
+						},
+						{
+							"key": "sortDirection",
+							"value": "DESC"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/pizzas?page=0&elements=15",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/pizzas?page=0&elements=15",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pizzas"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "elements",
+							"value": "15"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/orders/customer/182120056",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/orders/customer/182120056"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/customers/phone/(688) 944-6619",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/customers/phone/(688) 944-6619"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/pizzas/update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"pizzaId\": 12,\n    \"newPrice\": 2.88\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/pizzas/update"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/orders/random",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"idCustomer\":\"192758012\",\n    \"method\": \"D\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/orders/random"
+			},
+			"response": []
+		}
+	]
+}
