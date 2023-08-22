@@ -1,3 +1,19 @@
+var change = true;
+
+const anotherFunction = () => {
+  return new Promise((resolve, reject) => {
+    if (change) {
+      resolve("HolaMundo desde el asincronismo de JS");
+    } else {
+      reject("Whooooooooooops!");
+    }
+  });
+};
+
+anotherFunction()
+  .then((response) => console.log(response))
+  .catch((err) => console.log(err));
+
 // Sección 1: Promesas y callbacks
 
 // Ejemplo 1: Creación de una promesa básica
@@ -5,7 +21,7 @@ const promiseExample = new Promise((resolve, reject) => {
   // Aquí puedes realizar tareas asincrónicas
   // En este caso, simulamos un retardo de 2 segundos utilizando setTimeout
   setTimeout(() => {
-    const success = true;
+    const success = false;
 
     if (success) {
       resolve("¡La promesa se resolvió exitosamente!");
@@ -83,20 +99,20 @@ fetchMultipleData();
 // Ejemplo: Uso de promesas, async/await, callbacks y asincronismo en JavaScript
 
 // Función que retorna una promesa
-function fetchData() {
-  return new Promise((resolve, reject) => {
-    // Simulación de una operación asincrónica
-    setTimeout(() => {
-      const data = "Datos obtenidos de una fuente externa";
+// function fetchData() {
+//   return new Promise((resolve, reject) => {
+//     // Simulación de una operación asincrónica
+//     setTimeout(() => {
+//       const data = "Datos obtenidos de una fuente externa";
 
-      // Si se obtienen los datos correctamente, resolvemos la promesa
-      resolve(data);
+//       // Si se obtienen los datos correctamente, resolvemos la promesa
+//       resolve(data);
 
-      // En caso de error, rechazamos la promesa
-      // reject(new Error('No se pudieron obtener los datos'));
-    }, 2000);
-  });
-}
+//       // En caso de error, rechazamos la promesa
+//       // reject(new Error('No se pudieron obtener los datos'));
+//     }, 2000);
+//   });
+// }
 
 // Ejemplo con promesas y callbacks
 fetchData()

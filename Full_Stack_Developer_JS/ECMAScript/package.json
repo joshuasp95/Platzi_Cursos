@@ -12,5 +12,6 @@
     "versions"
   ],
   "author": "Joshua Sainz <joshuasainz95@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "type": "module"
 }
