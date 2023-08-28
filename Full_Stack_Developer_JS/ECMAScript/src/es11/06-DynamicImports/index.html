@@ -1,0 +1,27 @@
+<!-- En tu archivo HTML -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Import</title>
+    <style>
+      body {
+        background-color: rgba(173, 216, 230, 0.357);
+      }
+      button, form, label{
+        margin: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn">CLICK</button>
+    <form id="form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" />
+      <button type="submit">Submit</button>
+    </form>
+    <script type="module" src="06-dynamic-import.js"></script>
+  </body>
+</html>

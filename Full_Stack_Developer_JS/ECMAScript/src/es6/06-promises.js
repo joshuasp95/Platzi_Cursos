@@ -21,7 +21,7 @@ const promiseExample = new Promise((resolve, reject) => {
   // Aquí puedes realizar tareas asincrónicas
   // En este caso, simulamos un retardo de 2 segundos utilizando setTimeout
   setTimeout(() => {
-    const success = false;
+    const success = true;
 
     if (success) {
       resolve("¡La promesa se resolvió exitosamente!");
