@@ -1,1 +1,6 @@
-docker_data/
+*/docker_data/*
+*/data_docker/*
+
+imgs/
+
+

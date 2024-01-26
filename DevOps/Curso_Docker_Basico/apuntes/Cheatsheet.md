@@ -1,5 +1,5 @@
-
 # Road to SRE
+
 ## Docker Cheat Sheet
 
 En este documento, encontrarás una lista de comandos y ejemplos prácticos de Docker.
@@ -193,16 +193,4 @@ docker rm -f <id_container>
 
 ```bash
 docker rm $(docker ps -aq)
-```
-
-Hace casi 3 años
-Barck Code
-Enlaces en esta nota ↗
-   gist.github.com/BarckCode/35e2360fa49555382dabe1bfe356a064
-   twitter.com/barckcode
-Crea una página como esta →
-
-```
-
-Asegúrate de reemplazar `URL_DE_LA_IMAGEN` con la URL de la imagen que desees utilizar en tu documento Markdown. Puedes copiar y pegar este texto en un archivo `.md` y ajustarlo según tus necesidades.
 ```
