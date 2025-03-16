@@ -1,4 +1,4 @@
-package com.app.oop;
+package com.app.oop.model;
 
 /**
  * Clase que representa a un paciente en la aplicación médica.

@@ -1,10 +1,13 @@
-package com.app;
+package com.app.ui;
 
 import java.util.Scanner;
 
 public class UIMenu {
 
-    static void showMenu() {
+    public final static String[] MONTHS = {"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio"
+            , "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"};
+
+    public static void showMenu() {
 
         System.out.println("*** Welcome ***");
         System.out.println("Selecciona una opcion");
@@ -41,13 +44,13 @@ public class UIMenu {
         } while (response != 0);
     }
 
-    static void showPatientMenu() {
+    public static void showPatientMenu() {
         int response = 0;
 
         Scanner sc = new Scanner(System.in);
 
         do {
-            System.out.println("\n\n");
+            System.out.println("\n");
             System.out.println("Patient");
             System.out.println("1. Book an appointment");
             System.out.println("2. My appointments");
@@ -58,6 +61,7 @@ public class UIMenu {
             switch (response) {
                 case 1:
                     System.out.println("::Book an appointment");
+                    bookAppointment();
                     break;
                 case 2:
                     System.out.println("::My appointments");
@@ -72,5 +76,16 @@ public class UIMenu {
 
         } while (response != 0);
 
+    }
+
+    static void bookAppointment() {
+        int i = 0;
+        for (String month : MONTHS) {
+            i++;
+            System.out.println(i + "." + month);
+            if (i == 3) {
+                break;
+            }
+        }
     }
 }

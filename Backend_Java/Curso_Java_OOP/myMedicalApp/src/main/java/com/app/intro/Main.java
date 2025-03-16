@@ -1,7 +1,5 @@
-package com.app;
+package com.app.intro;
 
-import javax.print.Doc;
-import java.lang.reflect.Array;
 import java.util.Date;
 
 import static com.app.ui.UIMenu.*;

@@ -1,4 +1,4 @@
-package com.app;
+package com.app.intro;
 
 /**
  * Clase que representa a un paciente en la aplicación médica.

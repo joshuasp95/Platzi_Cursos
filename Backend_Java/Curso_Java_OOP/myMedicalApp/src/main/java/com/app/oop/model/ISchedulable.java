@@ -1,4 +1,4 @@
-package com.app.oop;
+package com.app.oop.model;
 
 import java.util.Date;
 

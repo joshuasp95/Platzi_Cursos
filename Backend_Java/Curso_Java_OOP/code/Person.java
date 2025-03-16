@@ -2,7 +2,7 @@ public class Person {
 
     private String name;
 
-    private static void walk() {
+    private void walk() {
         System.out.println("walking....");
     }
 

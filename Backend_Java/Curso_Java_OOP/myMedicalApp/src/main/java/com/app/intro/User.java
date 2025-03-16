@@ -1,4 +1,4 @@
-package com.app;
+package com.app.intro;
 
 /**
  * Clase que representa a un usuario genérico en la aplicación.
