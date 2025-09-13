@@ -12,25 +12,36 @@
 
 </div>
 
-> **⚠️ IMPORTANTE - SEGURIDAD:** Este repositorio es público. Todas las credenciales sensibles han sido removidas y reemplazadas por variables de entorno. **NUNCA** subas contraseñas, API keys o información sensible.
-
 ## 📖 Tabla de Contenidos
 
-- [🚀 Configuración Inicial](#-configuración-inicial)
-- [📁 Estructura del Repositorio](#-estructura-del-repositorio)
-- [💻 Rutas de Aprendizaje](#-rutas-de-aprendizaje)
-  - [Backend Java](#-backend-java)
-  - [Backend Python](#-backend-python)
-  - [Bases de Datos](#-bases-de-datos)
-  - [Full Stack JavaScript](#-full-stack-javascript)
-  - [Data Analyst](#-data-analyst)
-  - [DevOps](#-devops)
-  - [Angular](#-angular)
-- [🔒 Seguridad](#-seguridad)
-- [🛠️ Herramientas y Scripts](#️-herramientas-y-scripts)
-- [📚 Recursos Adicionales](#-recursos-adicionales)
-- [🤝 Contribuciones](#-contribuciones)
-- [📝 Licencia](#-licencia)
+- [� Repositorio de Cursos - Platzi](#-repositorio-de-cursos---platzi)
+  - [📖 Tabla de Contenidos](#-tabla-de-contenidos)
+  - [🚀 Configuración Inicial](#-configuración-inicial)
+    - [Prerrequisitos](#prerrequisitos)
+    - [Instalación](#instalación)
+  - [📁 Estructura del Repositorio](#-estructura-del-repositorio)
+  - [💻 Rutas de Aprendizaje](#-rutas-de-aprendizaje)
+    - [☕ Backend Java](#-backend-java)
+    - [🐍 Backend Python](#-backend-python)
+    - [🗄️ Bases de Datos](#️-bases-de-datos)
+    - [🌐 Full Stack JavaScript](#-full-stack-javascript)
+    - [📊 Data Analyst](#-data-analyst)
+    - [🚀 DevOps](#-devops)
+    - [🅰️ Angular](#️-angular)
+  - [🔒 Seguridad](#-seguridad)
+    - [Medidas Implementadas](#medidas-implementadas)
+    - [Buenas Prácticas de Seguridad](#buenas-prácticas-de-seguridad)
+  - [🛠️ Herramientas y Scripts](#️-herramientas-y-scripts)
+    - [Scripts Disponibles](#scripts-disponibles)
+    - [Comandos Útiles](#comandos-útiles)
+  - [📚 Recursos Adicionales](#-recursos-adicionales)
+    - [Enlaces Útiles](#enlaces-útiles)
+    - [Herramientas Recomendadas](#herramientas-recomendadas)
+  - [🤝 Contribuciones](#-contribuciones)
+    - [Para uso personal:](#para-uso-personal)
+  - [📝 Licencia](#-licencia)
+  - [👤 Autor](#-autor)
+    - [⭐ Si encuentras útil este repositorio, considera darle una estrella](#-si-encuentras-útil-este-repositorio-considera-darle-una-estrella)
 
 ## 🚀 Configuración Inicial
 
