@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase Pseudo Selectores</title>
+    <style>
+        * {
+            font-size: xx-large;
+        }
+
+        p {
+            color: salmon;
+        }
+
+        p::first-letter {
+            color: teal;
+        }
+
+        p::before {
+            content: "\1F600";
+        }
+
+        p:hover {
+            transform: scale(1.2);
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+        }
+
+        div p:nth-child(2) {
+            color: darkcyan;
+        }
+
+        input {
+            border: 2px solid darkgoldenrod;
+        }
+
+        input::placeholder {
+            color: darkgoldenrod;
+        }
+    </style>
+</head>
+
+<body>
+    <p> Hola</p>
+    <div>
+        <p> Platzi</p>
+        <p> Master</p>
+        <p> Que tal estas?</p>
+    </div>
+    <input type="text" placeholder="Introduce your name here">
+</body>
+
+</html>

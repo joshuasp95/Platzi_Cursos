@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div>div {
+            background-color: plum;
+        }
+
+        .platzi {
+            background-color: lightcyan;
+        }
+
+        .es {
+            background-color: lightcoral;
+        }
+
+        div+section {
+            border: 1px solid black;
+            color: darkblue;
+        }
+
+        div~p {
+            color: rebeccapurple;
+            font-size: larger;
+        }
+
+        @media (max-width: 420px) {
+            div {
+                background-color: orangered;
+                font-size: xx-large;
+
+            }
+
+            div>div {
+                background-color: tomato;
+                animation: colorChange 5s infinite;
+
+            }
+        }
+
+        @keyframes colorChange {
+            25% {
+                background-color: rebeccapurple;
+            }
+
+            50% {
+                background-color: yellowgreen;
+                transform: rotate(180deg);
+            }
+
+            75% {
+                background-color: orange;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div>
+            <p class="platzi">Platzi</p>
+            <div class="es">Es</div>
+        </div>
+    </div>
+    <p>Clase de selectores</p>
+    <section>
+        Hello world!
+    </section>
+    <div>Platzi master</div>
+</body>
+
+</html>

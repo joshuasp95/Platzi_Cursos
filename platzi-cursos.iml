@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="EclipseModuleManager">
+    <libelement value="jar://$MODULE_DIR$/Backend_Java/Curso_Java_Spring/platzi-market/gradle/wrapper/gradle-wrapper.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/Backend_Java/Curso_Spring_Data_JPA/platzi-pizzeria/gradle/wrapper/gradle-wrapper.jar!/" />
+    <src_description expected_position="1">
+      <src_folder value="file://$MODULE_DIR$/Backend_Java/Curso_Java_OOP/code" expected_position="1" />
+      <src_folder value="file://$MODULE_DIR$/Backend_Java/Curso_Java_Spring/platzi-market/build/generated/sources/annotationProcessor/java/main" expected_position="2" />
+      <src_folder value="file://$MODULE_DIR$/Backend_Java/Curso_Java_Spring/platzi-market/src/main/java" expected_position="3" />
+      <src_folder value="file://$MODULE_DIR$/Backend_Java/Curso_Java_Spring/platzi-market/src/test/java" expected_position="4" />
+      <src_folder value="file://$MODULE_DIR$/Backend_Java/Curso_Spring_Data_JPA/platzi-pizzeria/src/main/java" expected_position="5" />
+      <src_folder value="file://$MODULE_DIR$/Backend_Java/Curso_Spring_Data_JPA/platzi-pizzeria/src/test/java" expected_position="6" />
+      <src_folder value="file://$MODULE_DIR$/Backend_Java/Curso_Testing/Java-Test/src/main/java" expected_position="7" />
+      <src_folder value="file://$MODULE_DIR$/Backend_Java/Curso_Testing/Java-Test/src/test/java" expected_position="8" />
+      <src_folder value="file://$MODULE_DIR$/Backend_Java/Java_SE_Persistencia_Datos_API/src" expected_position="9" />
+      <src_folder value="file://$MODULE_DIR$/Backend_Java/Java_SE_Persistencia_Datos/src" expected_position="10" />
+    </src_description>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/Backend_Java/Curso_Java_Spring/platzi-market/build/classes/java/main" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/Backend_Java/Curso_Java_OOP/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Backend_Java/Curso_Java_Spring/platzi-market/build/generated/sources/annotationProcessor/java/main" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Backend_Java/Curso_Java_Spring/platzi-market/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Backend_Java/Curso_Java_Spring/platzi-market/src/test/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Backend_Java/Curso_Spring_Data_JPA/platzi-pizzeria/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Backend_Java/Curso_Spring_Data_JPA/platzi-pizzeria/src/test/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Backend_Java/Curso_Testing/Java-Test/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Backend_Java/Curso_Testing/Java-Test/src/test/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Backend_Java/Java_SE_Persistencia_Datos/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Backend_Java/Java_SE_Persistencia_Datos_API/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="gradle-wrapper.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/Backend_Java/Curso_Java_Spring/platzi-market/gradle/wrapper/gradle-wrapper.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Backend_Java/Curso_Spring_Data_JPA/platzi-pizzeria/gradle/wrapper/gradle-wrapper.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/Backend_Java/Curso_Spring_Data_JPA/platzi-pizzeria/gradle/wrapper/gradle-wrapper.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>
