@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mv:*)",
+      "Bash(powershell:*)",
+      "Bash(echo \"Status: $?\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

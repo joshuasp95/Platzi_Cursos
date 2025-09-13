@@ -1,0 +1,10 @@
+<p>
+  <input
+    type="text"
+    name="text"
+    id="text"
+    placeholder="text"
+    [(ngModel)]="imgParent"
+  />
+</p>
+<app-img [img]="imgParent" (loaded)="onLoaded($event)"></app-img>
