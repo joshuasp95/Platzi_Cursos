@@ -14,7 +14,7 @@
 
 ## 📖 Tabla de Contenidos
 
-- [� Repositorio de Cursos - Platzi](#-repositorio-de-cursos---platzi)
+- [📚 Repositorio de Cursos - Platzi](#-repositorio-de-cursos---platzi)
   - [📖 Tabla de Contenidos](#-tabla-de-contenidos)
   - [🚀 Configuración Inicial](#-configuración-inicial)
     - [Prerrequisitos](#prerrequisitos)
@@ -40,7 +40,6 @@
   - [🤝 Contribuciones](#-contribuciones)
     - [Para uso personal:](#para-uso-personal)
   - [📝 Licencia](#-licencia)
-  - [👤 Autor](#-autor)
     - [⭐ Si encuentras útil este repositorio, considera darle una estrella](#-si-encuentras-útil-este-repositorio-considera-darle-una-estrella)
 
 ## 🚀 Configuración Inicial
@@ -298,13 +297,6 @@ Este repositorio es de uso personal para documentar mi progreso en los cursos de
 Este proyecto es de uso educativo personal. Los cursos y contenidos originales pertenecen a [Platzi](https://platzi.com).
 
 El código desarrollado durante los cursos está disponible para referencia y aprendizaje.
-
-## 👤 Autor
-
-**Joshua Sainz**
-
-- GitHub: [@tu-usuario](https://github.com/tu-usuario)
-- LinkedIn: [Tu Perfil](https://linkedin.com/in/tu-perfil)
 
 ---
 
